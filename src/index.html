@@ -4,11 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <link rel="stylesheet" href="main.css">
-  <title>HTML Portfolio</title>
+  <title>HTML Example Portfolio</title>
 </head>
 <body>
-
-  Welcome to the HTML Portfolio Project
-
+  <section class="header">
+    <h1>Shepherd Professional</h1>
+    <h2>Product Manager, Web Developer</h2>
+  </section>
+  <section class="tagline">
+    <h3>Improve the web and the digital tools used every day.</h3>
+    <p>Each day, we still find more to explore and something else to research. Build. Measure. Learn. Repeat these, again and again. It's the Lean method to turn ideas into products, measure market or customer response and learn to pivot, to persevere or to combine both.</p>
+    <p>Competitive design can make all the difference. We combine our expertise in design with knowledgeable developers, to produce engaging websites and seemless conversions.</p>
+  </section>
+  <section class="skills">
+    <h3>Some Major Assets</h3>
+    <p>These technologies, in our current toolset, are a mix of the latest innovations and the proven and popular standards.</p>
+    <ul>
+      <li>HTML, CSS and JavaScript - for front-end website and web app development</li>
+      <li>PHP and MySQL (LAMP) - for server side programming and data</li>
+      <li>Mobile-first and responsive design, to enhance cross-platform experience</li>
+      <li>WordPress, Caffeine and Craft - for content management (CMS)</li>
+      <li>Google Analytics, to measure marketing performance and improve Search Engine Optimization (SEO)</li>
+      <li>Website grading tools, for monitoring active websites and apps</li>
+      <li>Proofreading and Copy Editing, to maximize and clarify your message, your authentic story</li>
+    </ul>
+  </section>
+  <section class="contact">
+    <h3>Take the Next Step</h3>
+    <p>Now that you know an online presence is an ongoing endeavor, contact us to get it all started or to take yours even further.</p>
+    <p>Call us by phone, <a href="tel:41&#55;-66&#55;-19&#53;0" title="">&#52;1&#55;-&#54;6&#55;-1&#57;&#53;0</a>, or send us a message.</p>
+    <div><a href="tel:41&#55;-66&#55;-19&#53;0" title="">&#52;1&#55;-&#54;6&#55;-1&#57;&#53;0</a></div>
+    <div id="contact-form" class="clearfix">
+        <p>Please provide your preference of phone number or email address, unless you would like us to use both. Thank you.</p>
+        <ul id="contact-form-errors" class="">
+            <li id="info">There was a conflict with that information:</li>
+        </ul>
+        <p id="success">Excellent! We'll call or email to confirm and </p>
+        <form method="post" action="process.php">
+            <label for="name">Name: <span class="required">*</span></label>
+            <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" />
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" />
+            <label for="telephone">Telephone: </label>
+            <input type="tel" id="telephone" name="telephone" value="" />
+            <label for="enquiry">Enquiry: </label>
+            <select id="enquiry" name="enquiry">
+                <option value="general">General</option>
+                <option value="sales">Product</option>
+                <option value="support">Sales</option>
+                <option value="support">Services</option>
+            </select>
+            <label for="message">Message: <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Your message must be greater than 11 charcters" required="required" data-minlength="11"></textarea>
+            <span id="loading"></span>
+            <input type="submit" value="Get Started" id="submit-button" />
+            <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+        </form>
+    </div>
+  </section>
 </body>
 </html>
